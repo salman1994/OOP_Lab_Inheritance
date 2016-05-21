@@ -73,6 +73,25 @@ class JazzBand: public Band
 	}
 };
 
+class MarchingBand: public Band
+{
+	private:
+		int mem;
+	
+	public:
+		
+	void setMember(int mem)
+	{
+		this -> mem = mem;
+	}
+	
+	int getcount()
+	{
+		count = mem;
+		return count;
+	}
+};
+
 
 int main()
  {
@@ -88,5 +107,11 @@ int main()
 	J.setname("Jazz Band");
  	cout << "Band Name: " << J.getname() << endl;
  	cout << "Total Members: " << J.getcount() << endl << endl;
+ 	
+ 	MarchingBand K;
+ 	K.setMember(7);
+	K.setname("Marching Band");
+ 	cout << "Band Name: " << K.getname() << endl;
+ 	cout << "Total Members: " << K.getcount() << endl << endl;
  }
 
